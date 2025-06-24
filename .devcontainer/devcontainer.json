@@ -1,0 +1,23 @@
+{
+  "name": "pa_proj",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/workspace/.pixi/env/bin/python"
+      }
+    }
+  },
+  "postCreateCommand": "pixi install --locked",
+  "remoteUser": "root"
+}
+
